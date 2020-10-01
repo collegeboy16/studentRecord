@@ -11,11 +11,11 @@ public:
 	string profession;
 	
 
-	// Functions
-	string fullname(string, string);
+	
+	string fullname(string, string);	// Functions
 
-	// Constructor
-	Person();
+	
+	Person();				// Constructor
 	
 };
 
@@ -27,6 +27,7 @@ public:
 
 };
 
+/**********Main Function***********/
 int main(){
 
 	// Creating an instance of the class that is going to create a person
@@ -58,22 +59,24 @@ int main(){
 // Member functon defitnitions include the constructors
 
 // This is being called once the objec is being created 
-	Person::Person(void){
-		cout << "Creating the object..." << endl;
-	}
+Person::Person(void){
+	cout << "Creating the object..." << endl;
+}
 
-	string Person::fullname(string name, string lName){
-		string full = name + lName;
-		return full;
-	}
+string Person::fullname(string name, string lName){
+	string full = name + lName;
+	return full;
+}
 
-	bool Student::isStudent(char isStudent){
-		if (isStudent == 'y' || isStudent == 'Y'){
-			cout << "GPA: ";
-			
-			return true;
-		}
-		else {
-			return false;
-		}
+bool Student::isStudent(char isStudent){
+	if (isStudent == 'y' || isStudent == 'Y'){
+		cout << "GPA: ";
+		
+		return true;
 	}
+	else {
+		return false;
+	}
+}
+
+/*************************PROGRAM ENDS HERE***********************/
